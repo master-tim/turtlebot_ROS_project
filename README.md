@@ -20,9 +20,9 @@
 > We created new map for task 4. we predifined certain positions for turtlebot to search for bottles. Turtlebot goes to these locations in certain order until it finds all the bottles. Once we find bottle we use yolo to pickit up use navigation package to bring it back. 
 			
 # How to run:
-	use 1.txt for task 1 
-	use 2.txt for task 2
-	use 3.txt for task 3 and 4  
+- ` use 1.txt for task 1 `
+- `use 2.txt for task 2`
+- `use 3.txt for task 3 and 4 ` 
 
 
 > ##### PS. please install additional ` yolo package`  to implement followings, and make sure bounding box id matches with this one...
