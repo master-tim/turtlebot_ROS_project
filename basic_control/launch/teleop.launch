@@ -1,0 +1,3 @@
+<launch>
+  <node pkg="basic_control" type="teleop" name="teleop" output="screen"/>
+</launch>

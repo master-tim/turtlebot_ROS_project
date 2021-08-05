@@ -1,0 +1,23 @@
+<launch> 
+
+	<include file="$(find ros_deep_learning)/launch/video_source.ros1.launch">
+		<arg name="input" value="csi://0" />
+	</include>
+
+	<include file="$(find darknet_ros)/launch/darknet_ros.launch"/>
+
+	<include file="$(find turtlebot3_manipulation_bringup)/launch/turtlebot3_manipulation_bringup.launch"/>
+
+	<include file="$(find turtlebot3_manipulation_moveit_config)/launch/move_group.launch"/>
+
+	<node name="teleop" type="teleop" pkg="basic_control" />
+
+	<include file="$(find turtlebot3_navigation)/launch/turtlebot3_navigation.launch">
+		<arg name="map_file" value="$HOME/empty_arena.yaml" />
+		<arg name="open_rviz" value="false"/>
+	</include>
+
+	<node name="three" type="three.py" pkg="tasks" />
+
+
+</launch>
