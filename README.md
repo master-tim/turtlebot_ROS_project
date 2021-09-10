@@ -1,12 +1,5 @@
 # Implemented packages:
 
-## 1. basic_control
-
-> This package manipulates robotic arm
-## 2. Tasks
-
-> this package contains implementation of 4 tasks...
-
 #### Task 1:
 
 > We used yolo bounding box's center to align turtlebot and bounding box width to move turtlebot closer after that we publish message to control robotic arm (basic_control)
